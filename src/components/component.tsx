@@ -8,9 +8,8 @@ export function Component() {
           alt="Image"
           src="/images/hero.png"
           fill={true}
-          objectFit="cover"
-          objectPosition="top"
-          className="max-w-full"
+          className="object-cover max-w-full"
+          style={{ objectPosition: "top" }}
         />
       </div>
     </section>

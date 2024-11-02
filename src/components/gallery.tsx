@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { images, GalleryImage } from "@/components/galleryImages";
+import { images, GalleryImage } from "@/data/galleryImages";
 
 export function Gallery() {
   return (
