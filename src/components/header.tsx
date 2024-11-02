@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AnimatedMobileNavbar } from "@/components/animated-mobile-navbar";
-import { NavLink, navLinks } from "@/components/navLinks";
+import { NavLink, navLinks } from "@/data/navLinks";
 import Image from "next/image";
 
 export function Header() {
