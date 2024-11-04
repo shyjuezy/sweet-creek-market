@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { blogSections, BlogSection } from "@/data/blogSection";
+import { blogSections, type BlogSection } from "@/data/blogSection";
 
 import {
   Carousel,
