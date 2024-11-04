@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { images, GalleryImage } from "@/data/galleryImages";
+import { images, type GalleryImage } from "@/data/galleryImages";
 import { useState } from "react";
 
 export function Gallery() {
