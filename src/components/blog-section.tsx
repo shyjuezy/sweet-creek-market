@@ -13,7 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function BlogSection() {
   return (
-    <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
+    <section className="px-8 md:px-24 flex flex-col items-center gap-6 py-8 sm:gap-7 bg-gradient-to-br from-[#B2DFDB] to-[#E0E0E0]">
       <div className="flex flex-col gap-3">
         <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-center">
           Featured Products
