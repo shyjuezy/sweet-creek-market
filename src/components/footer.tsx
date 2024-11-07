@@ -33,10 +33,25 @@ export function Footer() {
                 href="https://maps.google.com/?q=85+Meriwether+Rd,+Pike+Rd,+AL+36064"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-200 hover:text-gray-300"
+                className="group flex items-center gap-2 transition-colors duration-200 hover:text-gray-300"
               >
-                <p>85 Meriwether Rd</p>
-                <p>Pike Rd, AL 36064</p>
+                <div>
+                  <p>85 Meriwether Rd</p>
+                  <p>Pike Rd, AL 36064</p>
+                </div>
+                {/* Location Icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  className="group-hover:text-gray-300"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                  />
+                </svg>
               </Link>
               <p className="mt-2">Phone: (555) 123-4567</p>
             </address>
