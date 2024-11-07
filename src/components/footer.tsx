@@ -29,8 +29,15 @@ export function Footer() {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Contact Us</h3>
             <address className="not-italic">
-              <p>85 Meriwether Rd</p>
-              <p>Pike Rd, AL 36064</p>
+              <Link
+                href="https://maps.google.com/?q=85+Meriwether+Rd,+Pike+Rd,+AL+36064"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors duration-200 hover:text-gray-300"
+              >
+                <p>85 Meriwether Rd</p>
+                <p>Pike Rd, AL 36064</p>
+              </Link>
               <p className="mt-2">Phone: (555) 123-4567</p>
             </address>
           </div>
