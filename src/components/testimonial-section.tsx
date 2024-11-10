@@ -53,10 +53,10 @@ const TestimonialSection = () => {
                         align: "start",
                     }}
                     plugins={[plugin.current]}
-                    className="w-full"
+                    className="mt-6 w-full px-4 md:px-0"
                 >
                     <CarouselPrevious className="-left-6 size-7 xl:-left-12 xl:size-8" />
-                    <CarouselContent className="pb-4 items-stretch">
+                    <CarouselContent className="pb-4 m-2 items-stretch">
                         {testimonials.map((testimonial, index) => (
                             <CarouselItem key={index} className="md:basis-1/3 h-full">
                                 <div className="p-1 h-full">
