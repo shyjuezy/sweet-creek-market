@@ -28,19 +28,37 @@ export const AnimatedMobileNavbar = forwardRef<
     };
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent) => {
+    // Check if the click target is a navigation link
+    const target = e.target as HTMLElement;
+    if (target.tagName.toLowerCase() === 'a' || target.closest('a')) {
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <>
+    <div className="gap-0">
       <button
         {...props}
-        className={cn("md:hidden", className)}
+        className={cn("md:hidden relative w-6 h-6 flex items-center justify-center", className)}
         onClick={() => setIsOpen((open) => !open)}
         ref={ref}
       >
         <span className="sr-only">Toggle menu</span>
-        {isOpen ? <XIcon /> : <AlignJustify />}
+        {isOpen ? (
+          <XIcon className="h-6 w-6 absolute" />
+        ) : (
+          <AlignJustify className="h-6 w-6 absolute" />
+        )}
       </button>
-      <AnimatePresence>{isOpen ? children : null}</AnimatePresence>
-    </>
+      <AnimatePresence>
+        {isOpen ? (
+          <div onClick={handleNavClick}>
+            {children}
+          </div>
+        ) : null}
+      </AnimatePresence>
+    </div>
   );
 });
 

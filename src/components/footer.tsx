@@ -26,7 +26,7 @@ export function Footer() {
           </div>
 
           {/* Column 3: Contact Info */}
-          <div className="col-span-1">
+          <div id="contact-info" className="col-span-1 scroll-mt-[4.5rem]">
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Contact Us</h3>
             <address className="not-italic">
               <Link

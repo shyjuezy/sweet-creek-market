@@ -12,7 +12,9 @@ export default function AboutPage() {
             alt="Our family restaurant"
             fill
             className="object-cover"
-            priority
+            priority={true}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMsqAcAAWUA8f6XWZkAAAAASUVORK5CYII="
           />
         </div>
 
