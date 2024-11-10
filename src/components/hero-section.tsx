@@ -10,7 +10,9 @@ export function HeroSection() {
           fill={true}
           className="object-cover max-w-full"
           style={{ objectPosition: "top" }}
-          priority
+          priority={true}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMsqAcAAWUA8f6XWZkAAAAASUVORK5CYII="
         />
       </div>
 

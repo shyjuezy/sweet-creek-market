@@ -15,6 +15,8 @@ export default function MenuCard({ item, onViewMore }: MenuCardProps) {
         className="w-full h-48 object-cover"
         width={500}
         height={192}
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMsqAcAAWUA8f6XWZkAAAAASUVORK5CYII="
         priority
       />
       <div className="p-4">

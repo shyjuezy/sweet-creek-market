@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from '../types';
 import { XIcon } from 'lucide-react';
-
+import Image from 'next/image';
 interface ModalProps {
   item: MenuItem;
   onClose: () => void;
@@ -14,10 +14,10 @@ export default function Modal({ item, onClose }: ModalProps) {
       onClick={onClose}
     >
       <div
-        className="bg-white p-6 rounded-lg max-w-2xl w-full"
+        className="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[97vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between items-start">
+        <div className="w-full flex justify-between items-start">
           <h2 className="text-2xl font-bold">{item.name}</h2>
           <button
             onClick={onClose}
@@ -26,10 +26,14 @@ export default function Modal({ item, onClose }: ModalProps) {
             <XIcon className="h-6 w-6 transition-transform duration-300 hover:scale-110" />
           </button>
         </div>
-        <img
+        <Image
           src={item.image}
           alt={item.name}
           className="w-full h-64 object-cover rounded-lg my-4"
+          width={500}
+          height={192}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMsqAcAAWUA8f6XWZkAAAAASUVORK5CYII="
         />
         <p className="text-xl font-semibold mb-2">${item.price.toFixed(2)}</p>
         <p className="mb-4">{item.fullDescription}</p>
