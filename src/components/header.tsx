@@ -16,6 +16,7 @@ export function Header() {
             alt="Sweet Creek Farm Logo with wind"
             width={80}
             height={80}
+            priority
           />
         </Link>
         <div className="ml-auto flex gap-6 h-full items-center ">

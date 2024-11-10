@@ -15,6 +15,7 @@ export default function MenuCard({ item, onViewMore }: MenuCardProps) {
         className="w-full h-48 object-cover"
         width={500}
         height={192}
+        priority
       />
       <div className="p-4">
         <h3 className="text-xl font-semibold mb-2">{item.name}</h3>

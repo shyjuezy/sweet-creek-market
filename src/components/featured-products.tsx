@@ -41,6 +41,7 @@ export function FeaturedProducts() {
                             src={section.image}
                             fill
                             className="object-cover rounded-lg"
+                            priority
                           />
                         </div>
                         <div className="flex flex-1 flex-col gap-4">
