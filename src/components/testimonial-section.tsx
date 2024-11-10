@@ -16,7 +16,6 @@ import {
     AvatarFallback,
     AvatarImage,
 } from "@/components/ui/avatar"
-import Image from 'next/image'
 import { Star, StarHalf } from "lucide-react"
 
 const StarRating = ({ rating }: { rating: number }) => {
