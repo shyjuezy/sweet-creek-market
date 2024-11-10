@@ -6,30 +6,13 @@ import { AnimatedMobileNavbar } from "@/components/animated-mobile-navbar";
 import { NavLink, navLinks } from "@/data/navLinks";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback } from "react";
 
 export function Header() {
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // useEffect(() => {
-  //   if (isMobileMenuOpen) {
-  //     document.body.style.overflow = 'hidden';
-  //   } else {
-  //     document.body.style.overflow = 'unset';
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = 'unset';
-  //   };
-  // }, [isMobileMenuOpen]);
-  // // Close the mobile menu when navigating to a new page
-  // useEffect(() => {
-  //   setIsMobileMenuOpen(false);
-  // }, [pathname]);
-
   // Memoize the scroll handler to prevent unnecessary re-renders
-  const scrollToElement = useCallback((elementId: string, duration = 200) => {
+  const scrollToElement = (elementId: string, duration = 200) => {
     const element = document.getElementById(elementId);
     if (!element) return;
 
@@ -52,11 +35,10 @@ export function Header() {
     }
 
     requestAnimationFrame(animate);
-  }, []);
+  };
 
   // Memoize click handler
-  const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // setIsMobileMenuOpen(false); // Close the mobile menu
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     // Only handle href with hashtags
     if (href.includes('#')) {
       e.preventDefault();
@@ -71,10 +53,10 @@ export function Header() {
       // If we're on the same page or it's just a hash link
       scrollToElement(elementId);
     }
-  }, [pathname, scrollToElement]);
+  };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 [--animation-delay:600ms] backdrop-blur-[12px]">
+    <header className="fixed left-0 top-0 z-50 w-full animate-fade-in border-b border-gray-200 [--animation-delay:200ms] backdrop-blur-[12px]">
       <div className="flex h-[4.5rem] items-center justify-between px-8 md:px-16 2xl:px-24">
         <Link href="/" className="flex items-center">
           <Image
