@@ -11,10 +11,10 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 
-export function TopDishesSection() {
+export function FeaturedProducts() {
   return (
     <section className="bg-gradient-to-br from-[#B2DFDB] to-[#E0E0E0]">
-      <div className="container flex flex-col items-center gap-6 py-8 sm:gap-7 mx-auto py-8">
+      <div className="container flex flex-col items-center gap-6 py-8 sm:gap-7 mx-auto">
         <div className="flex flex-col gap-3">
           <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-center">
             Featured Products
