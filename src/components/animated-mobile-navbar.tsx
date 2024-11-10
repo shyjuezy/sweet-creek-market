@@ -44,11 +44,11 @@ export const AnimatedMobileNavbar = forwardRef<
         onClick={() => setIsOpen((open) => !open)}
         ref={ref}
       >
-        <span className="sr-only">Toggle menu</span>
+        <span className="sr-only block">Toggle menu</span>
         {isOpen ? (
-          <XIcon className="h-6 w-6 absolute" />
+          <XIcon className="h-8 w-8 absolute bg-secondary/50 rounded-full p-1 transition-all duration-300 hover:scale-110" />
         ) : (
-          <AlignJustify className="h-6 w-6 absolute" />
+          <AlignJustify className="h-8 w-8 absolute bg-secondary/50 rounded-full p-1 transition-all duration-300 hover:scale-110" />
         )}
       </button>
       <AnimatePresence>
