@@ -9,7 +9,7 @@ import Image from "next/image";
 export function Header() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 [--animation-delay:600ms] backdrop-blur-[12px]">
-      <div className="container flex h-[4.5rem] items-center justify-between">
+      <div className="flex h-[4.5rem] items-center justify-between px-8 md:px-16 2xl:px-24">
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
