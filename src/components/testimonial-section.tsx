@@ -16,7 +16,6 @@ import {
     AvatarFallback,
     AvatarImage,
 } from "@/components/ui/avatar"
-import Image from 'next/image'
 import { Star, StarHalf } from "lucide-react"
 
 const StarRating = ({ rating }: { rating: number }) => {
@@ -59,7 +58,7 @@ const TestimonialSection = () => {
                     <CarouselContent className="pb-4 m-2 items-stretch">
                         {testimonials.map((testimonial, index) => (
                             <CarouselItem key={index} className="md:basis-1/3 h-full">
-                                <div className="p-1 h-full">
+                                <div className="p-1 m-1 h-full">
                                     <Card className="h-full">
                                         <CardContent className="flex flex-col justify-between h-full p-6">
                                             <p className="text-md italic">"{testimonial.quote}"</p>
