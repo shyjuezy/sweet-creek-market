@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-8 md:px-16 lg:px-24">
+    <div className="container mx-auto px-4 py-8 md:px-16 lg:px-20">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-heading font-bold mb-6 text-center">Our Family Story</h1>
 
-        <div className="mb-12 relative h-[400px] rounded-lg overflow-hidden">
+        <div className="mb-12 relative h-[12rem] md:h-[24rem] lg:h-[36rem] rounded-lg overflow-hidden">
           <Image
             src="/images/about/family.jpg"
             alt="Our family restaurant"
