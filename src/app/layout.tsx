@@ -2,6 +2,8 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Roboto, PT_Serif } from "next/font/google";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 import { cn } from "@/lib/utils";
 
@@ -16,15 +18,15 @@ import { cn } from "@/lib/utils";
 // });
 
 const fontSans = Roboto({
-    variable: "--font-sans",
-    weight: ["100", "300", "400", "500", "700", "900"],
-    subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
 });
 
 const fontHeading = PT_Serif({
-    variable: "--font-heading",
-    weight: ["400", "700"],
-    subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["400", "700"],
+  subsets: ["latin"],
 });
 
 
@@ -47,7 +49,11 @@ export default function RootLayout({
           fontHeading.variable
         )}
       >
-        {children}
+        <Header />
+        <main className="pt-[4.5rem]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

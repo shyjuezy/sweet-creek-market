@@ -8,12 +8,10 @@ import TestimonialSection from '@/components/testimonial-section'
 export default function HomePage() {
   return (
     <>
-      <Header />
       <HeroSection />
       <FeaturedProducts />
       <Gallery />
       <TestimonialSection />
-      <Footer />
     </>
   );
 }
