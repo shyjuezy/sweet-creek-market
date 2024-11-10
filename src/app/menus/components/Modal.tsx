@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuItem } from '../types';
+import { XIcon } from 'lucide-react';
 
 interface ModalProps {
   item: MenuItem;
@@ -9,7 +10,7 @@ interface ModalProps {
 export default function Modal({ item, onClose }: ModalProps) {
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
       onClick={onClose}
     >
       <div
@@ -22,7 +23,7 @@ export default function Modal({ item, onClose }: ModalProps) {
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700"
           >
-            ×
+            <XIcon className="h-6 w-6 transition-transform duration-300 hover:scale-110" />
           </button>
         </div>
         <img
