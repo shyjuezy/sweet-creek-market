@@ -47,6 +47,7 @@ export function Gallery() {
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMsqAcAAWUA8f6XWZkAAAAASUVORK5CYII="
                 placeholder="blur"
                 className="object-cover w-full h-full"
+                priority
               />
             </div>
           ))}

@@ -10,6 +10,7 @@ export function HeroSection() {
           fill={true}
           className="object-cover max-w-full"
           style={{ objectPosition: "top" }}
+          priority
         />
       </div>
 
