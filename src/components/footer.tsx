@@ -19,9 +19,30 @@ export function Footer() {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/products">Products</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li>
+                <Link
+                  className="inline-block hover:text-gray-300 transition-transform duration-300 hover:scale-x-110 will-change-transform"
+                  href="/about"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="inline-block hover:text-gray-300 transition-transform duration-300 hover:scale-x-105 will-change-transform"
+                  href="/menu"
+                >
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="inline-block hover:text-gray-300 transition-transform duration-300 hover:scale-x-105 will-change-transform"
+                  href="/cafe"
+                >
+                  Coffee
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -35,7 +56,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 transition-colors duration-200 hover:text-gray-300"
               >
-                <div>
+                <div className="group-hover:text-gray-300 transition-all duration-300 will-change-transform hover:scale-x-105">
                   <p>85 Meriwether Rd</p>
                   <p>Pike Rd, AL 36064</p>
                 </div>
@@ -53,7 +74,12 @@ export function Footer() {
                   />
                 </svg>
               </Link>
-              <p className="mt-2">Phone: (555) 123-4567</p>
+              <Link
+                href="tel:+15551234567"
+                className="inline-block mt-2 hover:underline transition-all duration-300 hover:scale-x-105 will-change-transform"
+              >
+                Phone: (555) 123-4567
+              </Link>
             </address>
           </div>
 
