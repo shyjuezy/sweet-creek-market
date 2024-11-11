@@ -74,7 +74,7 @@ const CafePage = () => {
             {[1, 2, 3, 4, 5, 6].map((index) => (
               <div key={index} className="relative h-[250px]">
                 <Image
-                  src={`/images/cafe/cafe-${index}.jpg`} // You'll need to add these images
+                  src={`/images/cafe/cafe-${index}.jpeg`} // You'll need to add these images
                   alt={`Cafe image ${index}`}
                   fill
                   className="object-cover rounded-lg hover:scale-105 transition-transform duration-300"
