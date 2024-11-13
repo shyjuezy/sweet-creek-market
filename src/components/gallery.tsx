@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import Image from "next/image";
-import { images, type GalleryImage } from "@/data/galleryImages";
+import { images, type GalleryImage } from "@/data/gallery-images";
 import { useState } from "react";
 
 export function Gallery() {
@@ -27,8 +27,8 @@ export function Gallery() {
         </div>
         <p className="text-lg text-muted-foreground text-balance max-w-2xl text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam
-          augue, blandit sit amet varius a, rutrum in metus. Donec mattis sit amet
-          nisl ac.
+          augue, blandit sit amet varius a, rutrum in metus. Donec mattis sit
+          amet nisl ac.
         </p>
         <div className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto relative md:h-screen">
           {images.map((image: GalleryImage, index: number) => (
@@ -54,12 +54,20 @@ export function Gallery() {
       {/* Modal */}
       {selectedImage && (
         <div
-          className={`fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 ${isClosing ? `animate-out fade-out duration-${animationDuration}` : `animate-in fade-in duration-${animationDuration}`
-            }`}
+          className={`fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 ${
+            isClosing
+              ? `animate-out fade-out duration-${animationDuration}`
+              : `animate-in fade-in duration-${animationDuration}`
+          }`}
           onClick={handleClose}
         >
-          <div className={`relative w-full max-w-4xl h-[80vh] rounded-lg overflow-hidden ${isClosing ? `animate-out zoom-out-50 duration-200-${animationDuration}` : `animate-in zoom-in-50 duration-${animationDuration}`
-            }`}>
+          <div
+            className={`relative w-full max-w-4xl h-[80vh] rounded-lg overflow-hidden ${
+              isClosing
+                ? `animate-out zoom-out-50 duration-200-${animationDuration}`
+                : `animate-in zoom-in-50 duration-${animationDuration}`
+            }`}
+          >
             <Image
               src={selectedImage.src}
               alt={selectedImage.alt}

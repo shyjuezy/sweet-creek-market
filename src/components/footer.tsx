@@ -12,12 +12,16 @@ export function Footer() {
               <img alt="Logo" src="/images/logo.png" className="size-8" />
               <span className="text-xl">SweetCreek Farm Market</span>
             </Link>
-            <p className="text-sm text-gray-300 mb-4">Short company description here...</p>
+            <p className="text-sm text-gray-300 mb-4">
+              Short company description here...
+            </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -43,12 +47,22 @@ export function Footer() {
                   Coffee
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="inline-block hover:text-gray-300 transition-transform duration-300 hover:scale-x-105 will-change-transform"
+                  href="/career"
+                >
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Column 3: Contact Info */}
           <div id="contact-info" className="col-span-1 scroll-mt-[4.5rem]">
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
+              Contact Us
+            </h3>
             <address className="not-italic">
               <Link
                 href="https://maps.google.com/?q=85+Meriwether+Rd,+Pike+Rd,+AL+36064"
@@ -85,7 +99,9 @@ export function Footer() {
 
           {/* Column 4: Hours & Social */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">Hours</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
+              Hours
+            </h3>
             <div className="mb-6">
               <p className="text-sm">Monday - Saturday: 9AM - 6PM</p>
               <p className="text-sm">Sunday: Closed</p>
@@ -140,7 +156,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-4 text-sm text-center">
-          <p>© {new Date().getFullYear()} SweetCreek Farm Market. All Rights Reserved.</p>
+          <p>
+            © {new Date().getFullYear()} SweetCreek Farm Market. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>
