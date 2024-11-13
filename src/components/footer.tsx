@@ -22,7 +22,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
               Quick Links
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 px-2">
               <li>
                 <Link
                   className="inline-block hover:text-gray-300 transition-transform duration-300 hover:scale-x-110 will-change-transform"
@@ -63,7 +63,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
               Contact Us
             </h3>
-            <address className="not-italic">
+            <address className="not-italic px-2">
               <Link
                 href="https://maps.google.com/?q=85+Meriwether+Rd,+Pike+Rd,+AL+36064"
                 target="_blank"
@@ -102,12 +102,12 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-100 pb-2">
               Hours
             </h3>
-            <div className="mb-6">
+            <div className="mb-6 px-2">
               <p className="text-sm">Monday - Saturday: 9AM - 6PM</p>
               <p className="text-sm">Sunday: Closed</p>
             </div>
 
-            <div>
+            <div className="px-2">
               <h3 className="text-lg font-semibold mb-1">Follow Us</h3>
               <div className="flex gap-4">
                 {/* Facebook Icon */}
