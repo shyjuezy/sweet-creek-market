@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import { menuItems } from '@/app/menus/data/menuData';
-import MenuCard from '@/app/menus/components/MenuCard';
-import Modal from '@/app/menus/components/Modal';
-import { MenuItem } from '@/app/menus/types';
+import { menuItems } from '@/app/menu/data/menuData';
+import MenuCard from '@/app/menu/components/MenuCard';
+import Modal from '@/app/menu/components/Modal';
+import { MenuItem } from '@/app/menu/types';
 
 export default function MenuPage() {
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);

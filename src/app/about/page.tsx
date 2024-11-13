@@ -37,22 +37,22 @@ export default function AboutPage() {
           <h2 className="text-2xl font-heading font-semibold mb-4">Our Values</h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-2">Family First</h3>
               <p>We treat every guest like family, because to us, that's exactly what you are.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-2">Quality & Tradition</h3>
               <p>We honor traditional recipes while using the finest, locally-sourced ingredients.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-2">Community</h3>
               <p>We're proud to be part of this community and give back whenever we can.</p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
               <p>We're committed to environmental responsibility in all our practices.</p>
             </div>

@@ -1,4 +1,4 @@
-import { MenuItem } from "@/app/menus/types";
+import { MenuItem } from "@/app/menu/types";
 
 export const menuItems: MenuItem[] = [
   {

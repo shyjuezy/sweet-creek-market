@@ -75,7 +75,8 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-md font-semibold text-gray-800 transition-transform duration-200 hover:text-gray-700 hover:scale-105 will-change-transform"
+                className="text-md font-semibold text-gray-800 transition-all duration-300 hover:scale-105 will-change-transform"
+              // style={{ filter: 'drop-shadow(0 2px 0 hsl(var(--background)))' }}
               >
                 {link.label}
               </Link>
@@ -113,7 +114,7 @@ export function Header() {
             </motion.nav>
           </AnimatedMobileNavbar>
         </div>
-      </div>
-    </header>
+      </div >
+    </header >
   );
 }
