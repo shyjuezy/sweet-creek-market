@@ -1,9 +1,9 @@
-'use client';
-import React, { useState } from 'react';
-import { menuItems } from '@/app/menu/data/menuData';
-import MenuCard from '@/app/menu/components/MenuCard';
-import Modal from '@/app/menu/components/Modal';
-import { MenuItem } from '@/app/menu/types';
+"use client";
+import React, { useState } from "react";
+import { menuItems } from "@/app/menu/data/menu-data";
+import MenuCard from "@/app/menu/components/MenuCard";
+import Modal from "@/app/menu/components/Modal";
+import { MenuItem } from "@/app/menu/types";
 
 export default function MenuPage() {
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
@@ -21,11 +21,8 @@ export default function MenuPage() {
         ))}
       </div>
       {selectedItem && (
-        <Modal
-          item={selectedItem}
-          onClose={() => setSelectedItem(null)}
-        />
+        <Modal item={selectedItem} onClose={() => setSelectedItem(null)} />
       )}
     </div>
   );
-} 
+}

@@ -3,10 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AnimatedMobileNavbar } from "@/components/animated-mobile-navbar";
-import { NavLink, navLinks } from "@/data/navLinks";
+import { NavLink, navLinks } from "@/data/nav-links";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useCallback } from "react";
 
 export function Header() {
   const pathname = usePathname();
@@ -26,7 +25,7 @@ export function Header() {
 
       window.scrollTo({
         top: start + (end - start) * progress,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
 
       if (progress < 1) {
@@ -38,13 +37,16 @@ export function Header() {
   };
 
   // Memoize click handler
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     // Only handle href with hashtags
-    if (href.includes('#')) {
+    if (href.includes("#")) {
       e.preventDefault();
-      const elementId = href.split('#')[1];
+      const elementId = href.split("#")[1];
 
-      if (pathname !== '/' && href.startsWith('/#')) {
+      if (pathname !== "/" && href.startsWith("/#")) {
         // If we're not on home page and it's a hash link, navigate to home first
         window.location.href = href;
         return;
@@ -76,7 +78,7 @@ export function Header() {
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className="text-md font-semibold text-gray-800 transition-all duration-300 hover:scale-105 will-change-transform"
-              // style={{ filter: 'drop-shadow(0 2px 0 hsl(var(--background)))' }}
+                // style={{ filter: 'drop-shadow(0 2px 0 hsl(var(--background)))' }}
               >
                 {link.label}
               </Link>
@@ -114,7 +116,7 @@ export function Header() {
             </motion.nav>
           </AnimatedMobileNavbar>
         </div>
-      </div >
-    </header >
+      </div>
+    </header>
   );
 }
